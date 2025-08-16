@@ -1,6 +1,7 @@
-// Versión inicial
-function saludar() {
-    console.log("Hola mundo");
+// Versión actualizada
+function saludar(nombre) {
+    console.log(`Hola ${nombre}`);
 }
 
-saludar();
+const nombre = process.argv[2] || "Mundo";
+saludar(nombre);
