@@ -9,13 +9,15 @@ Una vez hecho eso configuramos nuestra identidad:
 
 ## Desarrollo de funcionalidad 
 
-**Branching Model elegido → Github Flow**
+#### Branching Model elegido → Github Flow
+
 Github Flow es un flujo simple y ágil basado en una sola rama principal que siempre debe estar estable y lista para producción. Todas las nuevas funcionalidades, correcciones y experimentos se hacen en ramas cortas que se crean a partir de main. Cada rama se integra a main mediante Pull Request, revisada y testeada antes de mergear.
 
 **Ramas** 
-*main* → Rama principal, siempre estable y lista para producción.
-*feature/nueva-funcionalidad* → Ramas para desarrollar nuevas funcionalidades. 
-*hotfix/correccion-error* → Ramas cortas para corregir errores en producción. 
+
+- *main* → Rama principal, siempre estable y lista para producción.  
+- *feature/nueva-funcionalidad* → Ramas para desarrollar nuevas funcionalidades. 
+- *hotfix/correccion-error* → Ramas cortas para corregir errores en producción. 
 
 Para desarrollar una funcionalidad vamos a crear una rama nueva llamada *feature/saludo-especial*, para eso realizamos lo siguiente: 
 - git branch feature/saludo-especial
@@ -31,15 +33,15 @@ La primera funcionalidad que vamos a agregar es una personalización del saludo 
 
 Ahora lo que sigue es realizar una pull request desde GitHub para solicitar que los cambios realizados en la rama feature/saludo-especial se fusionen con la rama main:
 
-![Creacion de PR](img\crear_PR1.png)
+![Creacion de PR](C:\Users\Joaquin\Documents\2025_TP01_RepoBase\img\crear_PR1.png)
 
 Una vez creada la pull request, observamos la petición. Como no genera conflicto podemos realizar el merge: 
 
-![Foto Pull Request](img\PR1.png)
+![Foto Pull Request](C:\Users\Joaquin\Documents\2025_TP01_RepoBase\img\PR1.png)
 
 Dando como resultado: 
 
-![Foto Resultado Pull Request](img\resultado_PR1.png)
+![Foto Resultado Pull Request](C:\Users\Joaquin\Documents\2025_TP01_RepoBase\img\resultado_PR1.png)
 
 Ahora como la primera funcionalidad fue integrada a la rama main con exito, podemos seguir utilizando la rama de desarrollo para agregar alguna funcionalidad nueva. 
 
@@ -59,7 +61,7 @@ Por ultimo, como se hizo con la primera funcionalidad, creamos una pull request 
 
 En esta parte del trabajo, desde la rama main, vamos a comentar una parte del código, simulando un error: 
 
-![Simulación de error](img\error.png)
+![Simulación de error](C:\Users\Joaquin\Documents\2025_TP01_RepoBase\img\error.png)
 
 - git add .
 - git commit -m "simulacion de error en main"
